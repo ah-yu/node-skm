@@ -1,0 +1,29 @@
+#! /usr/bin/env node
+
+const program = require('commander');
+const package = require('../package');
+const config = require('../lib/config');
+const Common = require('../lib/common');
+
+const common = new Common(config);
+
+program
+    .version(package.version);
+
+program
+    .command('ls')
+    .description('ls all ssh keys')
+    .action(() => {
+        common.listKeys();
+    });
+
+program
+    .command('init')
+    .description('init skm store')
+    .action(() => {
+        common.init();
+    });
+
+program.parse(process.argv);
+
+console.log('finish');

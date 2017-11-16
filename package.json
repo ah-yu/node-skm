@@ -1,0 +1,33 @@
+{
+  "name": "skm",
+  "version": "1.0.0",
+  "description": "ssh key manager",
+  "main": "index.js",
+  "bin": {
+    "skm": "./bin/skm"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buji1993/node-skm.git"
+  },
+  "keywords": [
+    "javascript",
+    "cli"
+  ],
+  "author": "buji",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/buji1993/node-skm/issues"
+  },
+  "homepage": "https://github.com/buji1993/node-skm#readme",
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "commander": "^2.11.0"
+  }
+}
