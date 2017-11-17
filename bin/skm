@@ -24,6 +24,26 @@ program
         common.init();
     });
 
-program.parse(process.argv);
+program
+    .command('use [alias]')
+    .description('use ssh key by alias')
+    .action((alias) => {
+        common.useKey(alias);
+    });
 
-console.log('finish');
+program
+    .command('delete [alias]')
+    .description('delete ssh key by alias')
+    .action((alias) => {
+        common.deleteKey(alias);
+    });
+
+program
+    .command('create [alias]')
+    .description('create ssh key')
+    .option('-c, --comment [comment], which set comment')
+    .action((alias, options) => {
+        common.createKey(alias, options.comment);
+    })
+
+program.parse(process.argv);
