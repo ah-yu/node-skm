@@ -27,9 +27,11 @@
   },
   "homepage": "https://github.com/buji1993/node-skm#readme",
   "dependencies": {
+    "@types/rimraf": "^2.0.2",
     "@types/shelljs": "^0.7.6",
     "chalk": "^2.3.0",
     "commander": "^2.11.0",
+    "rimraf": "^2.6.2",
     "shelljs": "^0.7.8"
   }
 }
