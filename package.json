@@ -1,7 +1,7 @@
 {
-  "name": "skm",
+  "name": "skm-ng",
   "version": "1.0.0",
-  "description": "ssh key manager",
+  "description": "a simple and powerful SSH Keys Manager",
   "main": "index.js",
   "bin": {
     "skm": "./bin/skm"
@@ -18,7 +18,8 @@
   },
   "keywords": [
     "javascript",
-    "cli"
+    "cli",
+    "ssh key manager"
   ],
   "author": "buji",
   "license": "MIT",
