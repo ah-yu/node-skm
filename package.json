@@ -10,7 +10,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/unit/*.test.js --exit"
   },
   "repository": {
     "type": "git",
@@ -33,5 +33,9 @@
     "commander": "^2.11.0",
     "rimraf": "^2.6.2",
     "shelljs": "^0.7.8"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.44",
+    "mocha": "^4.0.1"
   }
 }
