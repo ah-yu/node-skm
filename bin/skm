@@ -4,8 +4,9 @@ const program = require('commander');
 const package = require('../package');
 const config = require('../lib/config');
 const Common = require('../lib/common');
+const logger = require('../lib/logger');
 
-const common = new Common(config);
+const common = new Common(config, logger);
 
 program
     .version(package.version);
