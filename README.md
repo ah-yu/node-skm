@@ -2,8 +2,16 @@
 Yet another simple ssh key manager impleted by node.js. It helps you to manage your multiple SSH keys easily!
 
 ## Features
-- create,list,delete,rename your ssh keys
-- manager all your ssh keys by alias
+- [x] initialize skm store just for the first time
+- [x] list all your ssh keys
+- [x] use ssh key by alias
+- [x] delete ssh key by alias
+- [x] create ssh key by alias
+- [x] rename ssh key's alias
+- [ ] backup ssh keys
+- [ ] restore ssh keys
+
+
 
 ## Installation
 ```shell
