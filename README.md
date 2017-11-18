@@ -1,5 +1,7 @@
 # node-skm
 [![npm](https://img.shields.io/npm/v/skm-ng.svg?style=flat-square)](https://npmjs.org/package/skm-ng)
+[![Build Status](https://img.shields.io/travis/buji1993/node-skm.svg?style=flat-square)](https://www.travis-ci.org/buji1993/node-skm.svg?branch=master)
+[![codecov](https://img.shields.io/codecov/c/github/buji1993/node-skm.svg?style=flat-square)](https://codecov.io/gh/buji1993/node-skm)
 
 Yet another simple ssh key manager impleted by node.js. It helps you to manage your multiple SSH keys easily!
 
