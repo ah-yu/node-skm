@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/buji1993/node-skm.git"
+    "url": "git+https://github.com/anotheryu/node-skm.git"
   },
   "keywords": [
     "javascript",
@@ -26,9 +26,9 @@
   "author": "buji",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/buji1993/node-skm/issues"
+    "url": "https://github.com/anotheryu/node-skm/issues"
   },
-  "homepage": "https://github.com/buji1993/node-skm#readme",
+  "homepage": "https://github.com/anotheryu/node-skm#readme",
   "dependencies": {
     "@types/rimraf": "^2.0.2",
     "@types/shelljs": "^0.7.6",
