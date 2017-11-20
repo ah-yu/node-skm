@@ -1,6 +1,6 @@
 {
   "name": "skm-ng",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a simple and powerful SSH Keys Manager",
   "main": "index.js",
   "bin": {
