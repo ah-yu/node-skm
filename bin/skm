@@ -54,4 +54,11 @@ program
         common.renameKey(alias[0], alias[1]);
     });
 
+program
+    .command('backup')
+    .description('back ssh keys in skm store')
+    .action(() => {
+        common.backupKeys();
+    });
+
 program.parse(process.argv);

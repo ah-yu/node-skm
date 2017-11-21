@@ -1,6 +1,6 @@
 {
   "name": "skm-ng",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a simple and powerful SSH Keys Manager",
   "main": "index.js",
   "bin": {
@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/ah-yu/node-skm#readme",
   "dependencies": {
+    "archiver": "^2.1.0",
     "chalk": "^2.3.0",
     "commander": "^2.11.0",
     "rimraf": "^2.6.2",

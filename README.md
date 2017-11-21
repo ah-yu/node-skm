@@ -12,7 +12,7 @@ Yet another simple ssh key manager impleted by node.js. It helps you to manage y
 - [x] delete ssh key by alias
 - [x] create ssh key by alias
 - [x] rename ssh key's alias
-- [ ] backup ssh keys
+- [x] backup ssh keys
 - [ ] restore ssh keys
 
 
@@ -105,5 +105,14 @@ create dev ssh key successfully!
 skm rn dev beta
 > rename dev to beta successfully
 ```
+
+### backup ssh keys in skm store
+```shell
+skm backup
+> backup in /Users/buji/skm-2017-11-21T04:52:28.002Z.zip
+  12651 total bytes
+  back up keys successfully!
+```
+
 ## Licence
 [MIT License](https://github.com/TimothyYe/skm/blob/master/LICENSE)
