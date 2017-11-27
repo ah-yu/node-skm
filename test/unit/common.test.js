@@ -2,7 +2,7 @@
  * @Author: buji 
  * @Date: 2017-11-18 17:17:00 
  * @Last Modified by: buji
- * @Last Modified time: 2017-11-18 21:40:20
+ * @Last Modified time: 2017-11-27 09:38:31
  */
 'use strict'
 
@@ -232,4 +232,42 @@ describe('check common', () => {
             assert.deepStrictEqual(logger.logs, expectedLogs);
         });
     });
+
+    describe('check backup', () => {
+        it('should backup ssh keys success', async() => {
+            testUtil.generateSSHKeysCase(config);
+
+            const logger = new TestLogger();
+            const common = new Common(config, logger);
+
+            await common.backupKeys();
+
+            // TO DO: iso format test
+            const backupFileNameRegExp = /^skm-.*\.zip/;
+
+            const files = fs.readdirSync(path.resolve(config.skmPath, '../'));
+            let backupFileName;
+
+            for (let i = 0; i < files.length; i++) {
+                const file = files[i];
+                if (backupFileNameRegExp.test(file)) {
+                    backupFileName = file;
+                    break;
+                }
+            }
+
+            assert(backupFileName !== undefined);
+            const backupFilePath = path.resolve(config.skmPath, `../${backupFileName}`);
+            const backupFileSize = fs.statSync(backupFilePath).size;
+            const expectedLogs = {
+                info: [
+                    [`backup in ${backupFilePath}`],
+                    ['back up keys successfully!']
+                ],
+                error: []
+            };
+
+            assert.deepStrictEqual(logger.logs, expectedLogs);
+        })
+    })
 })
