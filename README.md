@@ -110,7 +110,6 @@ skm rn dev beta
 ```shell
 skm backup
 > backup in /Users/buji/skm-2017-11-21T04:52:28.002Z.zip
-  12651 total bytes
   back up keys successfully!
 ```
 
