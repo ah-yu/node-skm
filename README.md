@@ -49,6 +49,7 @@ $ npm install skm-ng -g
     delete [alias]            delete ssh key by alias
     create [options] [alias]  create ssh key
     rn [alias...]             rename alias
+    backup                    back ssh keys in skm store
 ```
 
 ### initialize skm store(just for the first time use)
