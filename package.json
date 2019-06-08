@@ -30,15 +30,15 @@
   },
   "homepage": "https://github.com/ah-yu/node-skm#readme",
   "dependencies": {
-    "archiver": "^2.1.0",
+    "archiver": "^3.0.0",
     "chalk": "^2.3.0",
     "commander": "^2.11.0",
     "rimraf": "^2.6.2",
-    "shelljs": "^0.7.8"
+    "shelljs": "^0.8.3"
   },
   "devDependencies": {
     "codecov": "^3.0.0",
-    "mocha": "^4.0.1",
-    "nyc": "^11.3.0"
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.1"
   }
 }
